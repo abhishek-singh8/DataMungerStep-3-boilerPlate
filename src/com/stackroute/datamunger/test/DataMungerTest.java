@@ -80,9 +80,9 @@ public class DataMungerTest {
 	@Test(expected = FileNotFoundException.class)
 	public void testFileNotFound() throws IOException {
 		reader = new CsvQueryProcessor("data/ipl2.csv");
+		
 		@SuppressWarnings("unused")
-		Header result = reader.getHeader();
-
+        Header result = reader.getHeader();
 	}
 
 	@Test
